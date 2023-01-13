@@ -17,8 +17,6 @@ FB237
 CUDA_VISIBLE_DEVICES=7 python3 learn.py --dataset FB237 --model GIE --rank 800 --optimizer Adagrad --learning_rate 1e-1 --batch_size 2000 --regularizer N3 --reg 5e-2 --max_epochs 100 --valid 5 -train -id 0 -save
 
 YAGO3-10
-CUDA_VISIBLE_DEVICES=6 python3 learn.py --dataset YAGO3-10 --model GIE --rank 1000 --optimizer Adagrad \
---learning_rate 1e-1 --batch_size 1000 --regularizer N3 --reg 5e-3 --max_epochs 200 \
---valid 5 -train -id 0 -save
+CUDA_VISIBLE_DEVICES=6 python3 learn.py --dataset YAGO3-10 --model GIE --rank 1000 --optimizer Adagrad --learning_rate 1e-1 --batch_size 1000 --regularizer N3 --reg 5e-3 --max_epochs 200 --valid 5 -train -id 0 -save
 ```
 
