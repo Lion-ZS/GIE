@@ -10,7 +10,7 @@ python process_datasets.py
 
 ```
 WN18RR
-CUDA_VISIBLE_DEVICES=3 python3 learn.py --dataset WN18RR --model GIE --rank 2000 --optimizer Adagrad --learning_rate 1e-1 --batch_size 2000 --regularizer N3 --reg 1e-1 --max_epochs 100 --valid 5 -train -id 0 -save -weight
+CUDA_VISIBLE_DEVICES=1 python3 ../run.py --dataset WN18RR --model GIE --rank 300 --regularizer N3 --reg 0.0 --optimizer Adam --max_epochs 300 --patience 15 --valid 5 --batch_size 1000 --neg_sample_size 50 --init_size 0.001 --learning_rate 0.001 --gamma 0.0 --bias learn --dtype double --double_neg --multi_c
 
  
 FB237
